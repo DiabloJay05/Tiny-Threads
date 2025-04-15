@@ -5,16 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+        </style>
 </head>
-<body>
-   
-   <div id="app"></div>
-   <div id="temporaryContent">
-    <div class="listProduct">
-        content file index
-    </div>
-   </div> 
 
-    <script src="index.js" type="module"></script>
+<body>
+    <header>
+        <a href="#" class="logo">Tiny Threads</a>
+        <div id="cartIcon">
+            <i class="ri-shopping-cart-line"></i>
+            <span class="cartItemCount"></span>
+
+        </div>
+    </header>
+
+    <div class="cart">
+        <h2 class="cartTitle">Your Cart</h2>
+        <div class="cartContent">
+           <!-- <div class="cartBox">
+                <img src="images/Dino.jpg" alt="" class="cartImg">
+                <div class="cartDetail">
+                    <h2 class="cartProductTitle">Dino Graphic Flap Tee</h2>
+                    <span class="cartPrice">R50</span>
+                    <div class="cartQuantity">
+                        <button id="minus">-</button>
+                        <span class="number">1</span>
+                        <button id="plus">+</button>
+                    </div>
+                </div>
+                <i class="ri-delete-bin-6-line cartRemove"></i>
+            </div> -->
+        </div>
+        <div class="total">
+            <div class="totalTitle">Total</div>
+            <div class="totalPrice">R0</div>
+        </div>
+        <button class="btnBuy">Buy Now</button>
+        <i class="ri-close-circle-line" id="cartClose"></i>
+    </div>
+
+    <section class="shop">
+        <h1 class="sectionTitle">Boys Graphic Tees</h1>
+        <div class="productContent">
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/DBZ.jpg" alt="">
+                </div>
+                <h2 class="productTitle">DBZ Graphic Flap Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R100</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/Dino.jpg" alt="">
+                </div>
+                <h2 class="productTitle">Dino Graphic Flap Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R70</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/NASA.jpg" alt="">
+                </div>
+                <h2 class="productTitle">NASA Graphic Flap Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R50</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/Dig.jpg" alt="">
+                </div>
+                <h2 class="productTitle">Big Graphic Flap Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R40</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/Pizza.jpg" alt="">
+                </div>
+                <h2 class="productTitle">Pizza Love Graphic Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R50</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/Skull.jpg" alt="">
+                </div>
+                <h2 class="productTitle">Skulls Full Graphic Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R110</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/Spray.jpg" alt="">
+                </div>
+                <h2 class="productTitle">Spray Paint Full Graphic Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R100</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+            
+            
+        </div>
+
+    </section>
+
+    <section class="shop">
+        <h1 class="sectionTitle">Boys Jeans</h1>
+        <div class="productContent">
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/B_Pants-1.jpeg" alt="">
+                </div>
+                <h2 class="productTitle">DBZ Graphic Flap Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R50</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/B_Pants-2.jpeg" alt="">
+                </div>
+                <h2 class="productTitle">DBZ Graphic Flap Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R50</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/B_Pants-3.jpeg" alt="">
+                </div>
+                <h2 class="productTitle">DBZ Graphic Flap Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R50</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/B_Pants-4.webp" alt="">
+                </div>
+                <h2 class="productTitle">DBZ Graphic Flap Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R50</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/B_Pants-5.jpg" alt="">
+                </div>
+                <h2 class="productTitle">DBZ Graphic Flap Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R50</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/B_Pants-6.webp" alt="">
+                </div>
+                <h2 class="productTitle">DBZ Graphic Flap Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R50</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+
+            <div class="productBox">
+                <div class="imgBox">
+                    <img src="images/B_Pants-7.jpg" alt="">
+                </div>
+                <h2 class="productTitle">DBZ Graphic Flap Tee</h2>
+                <div class="priceCart">
+                    <span class="price">R50</span>
+                    <i class="ri-shopping-cart-line addCart"></i>
+                </div>
+            </div>
+            
+            
+        </div>
+
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
